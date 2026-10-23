@@ -1,0 +1,230 @@
+# German translation of Semera Tabs.
+msgid ""
+msgstr ""
+"Project-Id-Version: Semera Tabs\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "Semera Tabs"
+msgstr "Semera Tabs"
+
+msgid "A tabs block for the block editor: icons, any blocks inside, accordion on mobile, accessible, no jQuery."
+msgstr "Ein Tabs-Block für den Block-Editor: mit Icons, beliebigen Blöcken im Inhalt, Akkordeon auf kleinen Bildschirmen, barrierefrei und ohne jQuery."
+
+msgid "Tab %d"
+msgstr "Tab %d"
+
+msgid "Tab"
+msgstr "Tab"
+
+msgid "Tab ID"
+msgstr "Tab-ID"
+
+msgid "Used in the URL after # to link to this tab. Leave empty to use the title."
+msgstr "Wird in der URL nach dem # verwendet, um auf diesen Tab zu verlinken. Leer lassen, um den Titel zu verwenden."
+
+msgid "Add tab"
+msgstr "Tab hinzufügen"
+
+msgid "Move tab earlier"
+msgstr "Tab nach vorn verschieben"
+
+msgid "Move tab later"
+msgstr "Tab nach hinten verschieben"
+
+msgid "Remove tab"
+msgstr "Tab entfernen"
+
+msgid "Selected tab"
+msgstr "Gewählter Tab"
+
+msgid "Layout"
+msgstr "Layout"
+
+msgid "Tabs are placed"
+msgstr "Tabs stehen"
+
+msgid "Above the content"
+msgstr "Über dem Inhalt"
+
+msgid "Beside the content"
+msgstr "Neben dem Inhalt"
+
+msgid "Tab alignment"
+msgstr "Ausrichtung der Tabs"
+
+msgid "Start"
+msgstr "Anfang"
+
+msgid "Center"
+msgstr "Mitte"
+
+msgid "End"
+msgstr "Ende"
+
+msgid "Fill the width"
+msgstr "Volle Breite"
+
+msgid "Space between tabs"
+msgstr "Abstand zwischen den Tabs"
+
+msgid "Panel padding"
+msgstr "Innenabstand des Inhalts"
+
+msgid "Tab buttons"
+msgstr "Tab-Schaltflächen"
+
+msgid "Horizontal padding"
+msgstr "Horizontaler Innenabstand"
+
+msgid "Vertical padding"
+msgstr "Vertikaler Innenabstand"
+
+msgid "Corner radius"
+msgstr "Eckenradius"
+
+msgid "Font weight"
+msgstr "Schriftstärke"
+
+msgid "Default"
+msgstr "Standard"
+
+msgid "Normal"
+msgstr "Normal"
+
+msgid "Medium"
+msgstr "Mittel"
+
+msgid "Semi-bold"
+msgstr "Halbfett"
+
+msgid "Bold"
+msgstr "Fett"
+
+msgid "Letter case"
+msgstr "Groß-/Kleinschreibung"
+
+msgid "Uppercase"
+msgstr "Großbuchstaben"
+
+msgid "Capitalize"
+msgstr "Jedes Wort groß"
+
+msgid "Lowercase"
+msgstr "Kleinbuchstaben"
+
+msgid "As typed"
+msgstr "Wie eingegeben"
+
+msgid "Icons"
+msgstr "Icons"
+
+msgid "Icon position"
+msgstr "Position des Icons"
+
+msgid "Before the title"
+msgstr "Vor dem Titel"
+
+msgid "Above the title"
+msgstr "Über dem Titel"
+
+msgid "After the title"
+msgstr "Nach dem Titel"
+
+msgid "Icon size"
+msgstr "Icon-Größe"
+
+msgid "Small screens"
+msgstr "Kleine Bildschirme"
+
+msgid "Accordion"
+msgstr "Akkordeon"
+
+msgid "Tabs stacked on top of each other"
+msgstr "Tabs untereinander"
+
+msgid "Tabs stay as they are"
+msgstr "Tabs bleiben Tabs"
+
+msgid "Small screen up to (px)"
+msgstr "Kleiner Bildschirm bis (px)"
+
+msgid "Screens up to this width get the layout above."
+msgstr "Bildschirme bis zu dieser Breite bekommen das oben gewählte Layout."
+
+msgid "Tab colors"
+msgstr "Tab-Farben"
+
+msgid "Tab text"
+msgstr "Tab-Text"
+
+msgid "Tab background"
+msgstr "Tab-Hintergrund"
+
+msgid "Active tab text"
+msgstr "Text des aktiven Tabs"
+
+msgid "Active tab background"
+msgstr "Hintergrund des aktiven Tabs"
+
+msgid "Accent (lines and borders)"
+msgstr "Akzent (Linien und Rahmen)"
+
+msgid "Tab title"
+msgstr "Tab-Titel"
+
+msgid "Choose icon"
+msgstr "Icon wählen"
+
+msgid "Remove icon"
+msgstr "Icon entfernen"
+
+msgid "Search icons"
+msgstr "Icons suchen"
+
+msgctxt "block title"
+msgid "Tab"
+msgstr "Tab"
+
+msgctxt "block description"
+msgid "A single tab of a Tabs block."
+msgstr "Ein einzelner Tab eines Tabs-Blocks."
+
+msgctxt "block title"
+msgid "Tabs"
+msgstr "Tabs"
+
+msgctxt "block description"
+msgid "Show content in tabs. Every tab can hold any blocks."
+msgstr "Zeigt Inhalte in Tabs. Jeder Tab kann beliebige Blöcke enthalten."
+
+msgctxt "block keyword"
+msgid "tabs"
+msgstr "tabs"
+
+msgctxt "block keyword"
+msgid "accordion"
+msgstr "akkordeon"
+
+msgctxt "block keyword"
+msgid "toggle"
+msgstr "umschalter"
+
+msgctxt "block keyword"
+msgid "panel"
+msgstr "reiter"
+
+msgctxt "block style label"
+msgid "Underline"
+msgstr "Unterstrichen"
+
+msgctxt "block style label"
+msgid "Boxed"
+msgstr "Umrandet"
+
+msgctxt "block style label"
+msgid "Pills"
+msgstr "Kapseln"

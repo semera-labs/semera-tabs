@@ -1,0 +1,9 @@
+node_modules/
+build/
+dist/
+*.zip
+.wp-playground/
+.DS_Store
+Thumbs.db
+.claude/settings.local.json
+CLAUDE.md

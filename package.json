@@ -1,0 +1,14 @@
+{
+  "name": "semera-tabs",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Tabs block for the WordPress block editor.",
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^31.0.0"
+  }
+}

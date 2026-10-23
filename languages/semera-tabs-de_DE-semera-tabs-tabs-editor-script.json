@@ -1,0 +1,185 @@
+{
+  "translation-revision-date": "2026-10-23 06:54+0000",
+  "generator": "semera-tabs i18n.py",
+  "domain": "messages",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "messages",
+        "lang": "de_DE",
+        "plural-forms": "nplurals=2; plural=n != 1;"
+      },
+      "Above the content": [
+        "Über dem Inhalt"
+      ],
+      "Above the title": [
+        "Über dem Titel"
+      ],
+      "Accent (lines and borders)": [
+        "Akzent (Linien und Rahmen)"
+      ],
+      "Accordion": [
+        "Akkordeon"
+      ],
+      "Active tab background": [
+        "Hintergrund des aktiven Tabs"
+      ],
+      "Active tab text": [
+        "Text des aktiven Tabs"
+      ],
+      "Add tab": [
+        "Tab hinzufügen"
+      ],
+      "After the title": [
+        "Nach dem Titel"
+      ],
+      "As typed": [
+        "Wie eingegeben"
+      ],
+      "Before the title": [
+        "Vor dem Titel"
+      ],
+      "Beside the content": [
+        "Neben dem Inhalt"
+      ],
+      "Bold": [
+        "Fett"
+      ],
+      "Capitalize": [
+        "Jedes Wort groß"
+      ],
+      "Center": [
+        "Mitte"
+      ],
+      "Choose icon": [
+        "Icon wählen"
+      ],
+      "Corner radius": [
+        "Eckenradius"
+      ],
+      "Default": [
+        "Standard"
+      ],
+      "End": [
+        "Ende"
+      ],
+      "Fill the width": [
+        "Volle Breite"
+      ],
+      "Font weight": [
+        "Schriftstärke"
+      ],
+      "Horizontal padding": [
+        "Horizontaler Innenabstand"
+      ],
+      "Icon position": [
+        "Position des Icons"
+      ],
+      "Icon size": [
+        "Icon-Größe"
+      ],
+      "Icons": [
+        "Icons"
+      ],
+      "Layout": [
+        "Layout"
+      ],
+      "Letter case": [
+        "Groß-/Kleinschreibung"
+      ],
+      "Lowercase": [
+        "Kleinbuchstaben"
+      ],
+      "Medium": [
+        "Mittel"
+      ],
+      "Move tab earlier": [
+        "Tab nach vorn verschieben"
+      ],
+      "Move tab later": [
+        "Tab nach hinten verschieben"
+      ],
+      "Normal": [
+        "Normal"
+      ],
+      "Panel padding": [
+        "Innenabstand des Inhalts"
+      ],
+      "Remove icon": [
+        "Icon entfernen"
+      ],
+      "Remove tab": [
+        "Tab entfernen"
+      ],
+      "Screens up to this width get the layout above.": [
+        "Bildschirme bis zu dieser Breite bekommen das oben gewählte Layout."
+      ],
+      "Search icons": [
+        "Icons suchen"
+      ],
+      "Selected tab": [
+        "Gewählter Tab"
+      ],
+      "Semi-bold": [
+        "Halbfett"
+      ],
+      "Small screen up to (px)": [
+        "Kleiner Bildschirm bis (px)"
+      ],
+      "Small screens": [
+        "Kleine Bildschirme"
+      ],
+      "Space between tabs": [
+        "Abstand zwischen den Tabs"
+      ],
+      "Start": [
+        "Anfang"
+      ],
+      "Tab": [
+        "Tab"
+      ],
+      "Tab %d": [
+        "Tab %d"
+      ],
+      "Tab ID": [
+        "Tab-ID"
+      ],
+      "Tab alignment": [
+        "Ausrichtung der Tabs"
+      ],
+      "Tab background": [
+        "Tab-Hintergrund"
+      ],
+      "Tab buttons": [
+        "Tab-Schaltflächen"
+      ],
+      "Tab colors": [
+        "Tab-Farben"
+      ],
+      "Tab text": [
+        "Tab-Text"
+      ],
+      "Tab title": [
+        "Tab-Titel"
+      ],
+      "Tabs are placed": [
+        "Tabs stehen"
+      ],
+      "Tabs stacked on top of each other": [
+        "Tabs untereinander"
+      ],
+      "Tabs stay as they are": [
+        "Tabs bleiben Tabs"
+      ],
+      "Uppercase": [
+        "Großbuchstaben"
+      ],
+      "Used in the URL after # to link to this tab. Leave empty to use the title.": [
+        "Wird in der URL nach dem # verwendet, um auf diesen Tab zu verlinken. Leer lassen, um den Titel zu verwenden."
+      ],
+      "Vertical padding": [
+        "Vertikaler Innenabstand"
+      ]
+    }
+  }
+}

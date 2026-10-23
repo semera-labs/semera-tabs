@@ -1,0 +1,299 @@
+# Semera Tabs translation template.
+msgid ""
+msgstr ""
+"Project-Id-Version: Semera Tabs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: semera-tabs\n"
+
+#: includes/Tabs.php:94 src/tabs/edit.js:43
+msgid "Tab %d"
+msgstr ""
+
+#: src/tab/edit.js:21
+msgid "Tab"
+msgstr ""
+
+#: src/tab/settings.js:24
+msgid "Tab ID"
+msgstr ""
+
+#: src/tab/settings.js:25
+msgid "Used in the URL after # to link to this tab. Leave empty to use the title."
+msgstr ""
+
+#: src/tabs/edit.js:121 src/tabs/edit.js:257
+msgid "Add tab"
+msgstr ""
+
+#: src/tabs/edit.js:124
+msgid "Move tab earlier"
+msgstr ""
+
+#: src/tabs/edit.js:130
+msgid "Move tab later"
+msgstr ""
+
+#: src/tabs/edit.js:136
+msgid "Remove tab"
+msgstr ""
+
+#: src/tabs/edit.js:145
+msgid "Selected tab"
+msgstr ""
+
+#: src/tabs/edit.js:149 src/tabs/edit.js:198
+msgid "Layout"
+msgstr ""
+
+#: src/tabs/edit.js:150
+msgid "Tabs are placed"
+msgstr ""
+
+#: src/tabs/edit.js:151
+msgid "Above the content"
+msgstr ""
+
+#: src/tabs/edit.js:152
+msgid "Beside the content"
+msgstr ""
+
+#: src/tabs/edit.js:154
+msgid "Tab alignment"
+msgstr ""
+
+#: src/tabs/edit.js:155
+msgid "Start"
+msgstr ""
+
+#: src/tabs/edit.js:156
+msgid "Center"
+msgstr ""
+
+#: src/tabs/edit.js:157
+msgid "End"
+msgstr ""
+
+#: src/tabs/edit.js:158
+msgid "Fill the width"
+msgstr ""
+
+#: src/tabs/edit.js:160
+msgid "Space between tabs"
+msgstr ""
+
+#: src/tabs/edit.js:161
+msgid "Panel padding"
+msgstr ""
+
+#: src/tabs/edit.js:163
+msgid "Tab buttons"
+msgstr ""
+
+#: src/tabs/edit.js:164
+msgid "Horizontal padding"
+msgstr ""
+
+#: src/tabs/edit.js:165
+msgid "Vertical padding"
+msgstr ""
+
+#: src/tabs/edit.js:166
+msgid "Corner radius"
+msgstr ""
+
+#: src/tabs/edit.js:174
+msgid "Font weight"
+msgstr ""
+
+#: src/tabs/edit.js:175 src/tabs/edit.js:182
+msgid "Default"
+msgstr ""
+
+#: src/tabs/edit.js:176
+msgid "Normal"
+msgstr ""
+
+#: src/tabs/edit.js:177
+msgid "Medium"
+msgstr ""
+
+#: src/tabs/edit.js:178
+msgid "Semi-bold"
+msgstr ""
+
+#: src/tabs/edit.js:179
+msgid "Bold"
+msgstr ""
+
+#: src/tabs/edit.js:181
+msgid "Letter case"
+msgstr ""
+
+#: src/tabs/edit.js:183
+msgid "Uppercase"
+msgstr ""
+
+#: src/tabs/edit.js:184
+msgid "Capitalize"
+msgstr ""
+
+#: src/tabs/edit.js:185
+msgid "Lowercase"
+msgstr ""
+
+#: src/tabs/edit.js:186
+msgid "As typed"
+msgstr ""
+
+#: src/tabs/edit.js:189
+msgid "Icons"
+msgstr ""
+
+#: src/tabs/edit.js:190
+msgid "Icon position"
+msgstr ""
+
+#: src/tabs/edit.js:191
+msgid "Before the title"
+msgstr ""
+
+#: src/tabs/edit.js:192
+msgid "Above the title"
+msgstr ""
+
+#: src/tabs/edit.js:193
+msgid "After the title"
+msgstr ""
+
+#: src/tabs/edit.js:195
+msgid "Icon size"
+msgstr ""
+
+#: src/tabs/edit.js:197
+msgid "Small screens"
+msgstr ""
+
+#: src/tabs/edit.js:199
+msgid "Accordion"
+msgstr ""
+
+#: src/tabs/edit.js:200
+msgid "Tabs stacked on top of each other"
+msgstr ""
+
+#: src/tabs/edit.js:201
+msgid "Tabs stay as they are"
+msgstr ""
+
+#: src/tabs/edit.js:206
+msgid "Small screen up to (px)"
+msgstr ""
+
+#: src/tabs/edit.js:207
+msgid "Screens up to this width get the layout above."
+msgstr ""
+
+#: src/tabs/edit.js:220
+msgid "Tab colors"
+msgstr ""
+
+#: src/tabs/edit.js:223
+msgid "Tab text"
+msgstr ""
+
+#: src/tabs/edit.js:224
+msgid "Tab background"
+msgstr ""
+
+#: src/tabs/edit.js:225
+msgid "Active tab text"
+msgstr ""
+
+#: src/tabs/edit.js:226
+msgid "Active tab background"
+msgstr ""
+
+#: src/tabs/edit.js:227
+msgid "Accent (lines and borders)"
+msgstr ""
+
+#: src/tabs/edit.js:251
+msgid "Tab title"
+msgstr ""
+
+#: src/tabs/icons.js:37
+msgid "Choose icon"
+msgstr ""
+
+#: src/tabs/icons.js:41
+msgid "Remove icon"
+msgstr ""
+
+#: src/tabs/icons.js:50
+msgid "Search icons"
+msgstr ""
+
+#: semera-tabs.php
+msgid "Semera Tabs"
+msgstr ""
+
+#: semera-tabs.php
+msgid "A tabs block for the block editor: icons, any blocks inside, accordion on mobile, accessible, no jQuery."
+msgstr ""
+
+#: src/tab/block.json
+msgctxt "block title"
+msgid "Tab"
+msgstr ""
+
+#: src/tab/block.json
+msgctxt "block description"
+msgid "A single tab of a Tabs block."
+msgstr ""
+
+#: src/tabs/block.json
+msgctxt "block title"
+msgid "Tabs"
+msgstr ""
+
+#: src/tabs/block.json
+msgctxt "block description"
+msgid "Show content in tabs. Every tab can hold any blocks."
+msgstr ""
+
+#: src/tabs/block.json
+msgctxt "block keyword"
+msgid "tabs"
+msgstr ""
+
+#: src/tabs/block.json
+msgctxt "block keyword"
+msgid "accordion"
+msgstr ""
+
+#: src/tabs/block.json
+msgctxt "block keyword"
+msgid "toggle"
+msgstr ""
+
+#: src/tabs/block.json
+msgctxt "block keyword"
+msgid "panel"
+msgstr ""
+
+#: src/tabs/block.json
+msgctxt "block style label"
+msgid "Underline"
+msgstr ""
+
+#: src/tabs/block.json
+msgctxt "block style label"
+msgid "Boxed"
+msgstr ""
+
+#: src/tabs/block.json
+msgctxt "block style label"
+msgid "Pills"
+msgstr ""

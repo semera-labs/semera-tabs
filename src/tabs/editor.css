@@ -1,0 +1,87 @@
+/* Editor only. The tab list is built from the tab blocks; titles are edited in place. */
+
+/* Dashed outline around the whole block, so it is clear which blocks belong to the tabs. */
+.wp-block-semera-tabs-tabs {
+	outline: 1px dashed color-mix(in srgb, currentColor 35%, transparent);
+	outline-offset: 4px;
+}
+
+.wp-block-semera-tabs-tabs .semera-tabs__tab {
+	cursor: text;
+}
+
+.wp-block-semera-tabs-tabs .semera-tabs__label:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.wp-block-semera-tabs-tabs .semera-tabs__label {
+	min-width: 2em;
+}
+
+.wp-block-semera-tabs-tabs .semera-tabs__add {
+	appearance: none;
+	flex: none;
+	align-self: center;
+	margin-inline: 0.5em;
+	padding: 0 0.6em;
+	border: 1px dashed currentColor;
+	border-radius: 4px;
+	background: none;
+	color: inherit;
+	font: inherit;
+	line-height: 1.6;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.wp-block-semera-tabs-tabs .semera-tabs__add:hover,
+.wp-block-semera-tabs-tabs .semera-tabs__add:focus-visible {
+	opacity: 1;
+}
+
+.wp-block-semera-tabs-tabs .semera-tabs__list {
+	overflow-x: visible;
+}
+
+.wp-block-semera-tabs-tabs .semera-tabs__panel {
+	margin-block: 0;
+}
+
+/* Icon picker */
+.semera-tabs-icon-picker {
+	margin-block-end: 16px;
+}
+
+.semera-tabs-icon-picker__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.semera-tabs-icon-picker .semera-tabs__icon svg,
+.semera-tabs-icon-grid .semera-tabs__icon svg {
+	width: 20px;
+	height: 20px;
+}
+
+.semera-tabs-icon-grid {
+	box-sizing: border-box;
+	width: 300px;
+	padding: 12px;
+}
+
+.semera-tabs-icon-grid__icons {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 4px;
+	max-height: 240px;
+	margin-top: 12px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.semera-tabs-icon-grid__icons .components-button {
+	justify-content: center;
+	height: 40px;
+}

@@ -1,0 +1,365 @@
+/*
+ * Tabs block, front end and editor.
+ * Colors, sizes and spacing come from custom properties set on the block
+ * (see includes/Tabs.php); every one has a fallback here.
+ */
+.semera-tabs {
+	--semera-tabs-_accent: var(--semera-tabs-accent, var(--wp--preset--color--contrast, #1e1e1e));
+	--semera-tabs-_line: color-mix(in srgb, currentColor 22%, transparent);
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.semera-tabs.is-vertical {
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 1.5em;
+}
+
+/* Tab list */
+.semera-tabs__list {
+	display: flex;
+	flex: none;
+	gap: var(--semera-tabs-gap, 0);
+	overflow-x: auto;
+	scrollbar-width: thin;
+}
+
+.is-vertical > .semera-tabs__list {
+	flex-direction: column;
+	overflow: visible;
+	min-width: 12em;
+	max-width: 40%;
+}
+
+.is-tabs-center > .semera-tabs__list {
+	justify-content: center;
+}
+
+.is-tabs-end > .semera-tabs__list {
+	justify-content: flex-end;
+}
+
+.is-tabs-stretch > .semera-tabs__list > .semera-tabs__tab {
+	flex: 1 1 auto;
+}
+
+.semera-tabs__tab,
+.semera-tabs__toggle {
+	appearance: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5em;
+	box-sizing: border-box;
+	width: auto;
+	min-height: 0;
+	margin: 0;
+	padding: var(--semera-tabs-pad-y, 0.75em) var(--semera-tabs-pad-x, 1.25em);
+	border: 0;
+	border-radius: var(--semera-tabs-radius, 0);
+	background: var(--semera-tabs-bg, transparent);
+	box-shadow: none;
+	color: var(--semera-tabs-color, inherit);
+	font: inherit;
+	font-size: var(--semera-tabs-font-size, inherit);
+	font-weight: var(--semera-tabs-font-weight, inherit);
+	letter-spacing: inherit;
+	line-height: inherit;
+	text-align: center;
+	text-decoration: none;
+	text-transform: var(--semera-tabs-transform, inherit);
+	white-space: nowrap;
+	cursor: pointer;
+	transition: color 0.15s, background-color 0.15s, box-shadow 0.15s;
+}
+
+.semera-tabs__tab {
+	flex: none;
+}
+
+.is-vertical > .semera-tabs__list > .semera-tabs__tab {
+	justify-content: flex-start;
+	text-align: start;
+	white-space: normal;
+}
+
+.semera-tabs__tab:hover:not([aria-selected="true"]) {
+	background: var(--semera-tabs-bg, color-mix(in srgb, currentColor 8%, transparent));
+}
+
+.semera-tabs__tab:focus-visible,
+.semera-tabs__toggle:focus-visible {
+	outline: 2px solid var(--semera-tabs-_accent);
+	outline-offset: -2px;
+}
+
+/* No ring after a mouse click (themes often style :focus); keyboard focus keeps its ring. */
+.semera-tabs .semera-tabs__tab:focus:not(:focus-visible),
+.semera-tabs .semera-tabs__toggle:focus:not(:focus-visible),
+.semera-tabs .semera-tabs__panel:focus:not(:focus-visible) {
+	outline: none;
+}
+
+.semera-tabs__tab[aria-selected="true"],
+.semera-tabs__toggle[aria-expanded="true"] {
+	background: var(--semera-tabs-active-bg, var(--semera-tabs-bg, transparent));
+	color: var(--semera-tabs-active-color, var(--semera-tabs-color, inherit));
+}
+
+/* Icons */
+.semera-tabs__icon {
+	display: inline-flex;
+	flex: none;
+}
+
+.semera-tabs__icon svg {
+	fill: none;
+	stroke: currentColor;
+	width: var(--semera-tabs-icon-size, 1.25em);
+	height: var(--semera-tabs-icon-size, 1.25em);
+}
+
+.has-icons-top .semera-tabs__tab {
+	flex-direction: column;
+}
+
+.has-icons-end .semera-tabs__tab {
+	flex-direction: row-reverse;
+}
+
+/* Panels */
+.semera-tabs__panels {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.semera-tabs__panel {
+	padding-block: var(--semera-tabs-panel-pad, 1.25em);
+	padding-inline: var(--semera-tabs-panel-pad, 0);
+}
+
+.semera-tabs__panel[hidden] {
+	display: none;
+}
+
+.semera-tabs__panel > :first-child {
+	margin-block-start: 0;
+}
+
+.semera-tabs__panel > :last-child {
+	margin-block-end: 0;
+}
+
+.semera-tabs__heading,
+.semera-tabs__toggle {
+	display: none;
+}
+
+/* Style: underline (default) */
+.semera-tabs__list {
+	box-shadow: inset 0 -1px 0 var(--semera-tabs-_line);
+}
+
+.semera-tabs__tab[aria-selected="true"] {
+	box-shadow: inset 0 -2px 0 var(--semera-tabs-_accent);
+}
+
+.is-vertical > .semera-tabs__list {
+	box-shadow: inset -1px 0 0 var(--semera-tabs-_line);
+}
+
+.is-vertical > .semera-tabs__list > .semera-tabs__tab[aria-selected="true"] {
+	box-shadow: inset -2px 0 0 var(--semera-tabs-_accent);
+}
+
+/* Style: boxed */
+.is-style-boxed > .semera-tabs__list {
+	box-shadow: none;
+	padding-bottom: 1px;
+}
+
+.is-style-boxed > .semera-tabs__list > .semera-tabs__tab {
+	border: 1px solid var(--semera-tabs-_line);
+	border-radius: var(--semera-tabs-radius, 4px);
+}
+
+.is-style-boxed > .semera-tabs__list > .semera-tabs__tab[aria-selected="true"] {
+	box-shadow: none;
+	border-color: var(--semera-tabs-_accent);
+	background: var(--semera-tabs-active-bg, color-mix(in srgb, var(--semera-tabs-_accent) 8%, transparent));
+}
+
+.is-style-boxed > .semera-tabs__list {
+	margin-block-end: 0.75em;
+}
+
+.is-style-boxed.is-vertical > .semera-tabs__list {
+	margin-block-end: 0;
+}
+
+.is-style-boxed .semera-tabs__panels {
+	border: 1px solid var(--semera-tabs-_line);
+	border-radius: var(--semera-tabs-radius, 4px);
+}
+
+.is-style-boxed .semera-tabs__panel {
+	padding: var(--semera-tabs-panel-pad, 1.25em);
+}
+
+/* Style: pills */
+.is-style-pills > .semera-tabs__list,
+.is-style-pills.is-vertical > .semera-tabs__list {
+	box-shadow: none;
+	gap: var(--semera-tabs-gap, 0.5em);
+}
+
+.is-style-pills > .semera-tabs__list > .semera-tabs__tab {
+	border-radius: var(--semera-tabs-radius, 999px);
+}
+
+.is-style-pills.has-icons-top > .semera-tabs__list > .semera-tabs__tab {
+	border-radius: var(--semera-tabs-radius, 1.25em);
+}
+
+.is-style-pills > .semera-tabs__list > .semera-tabs__tab[aria-selected="true"] {
+	box-shadow: none;
+	background: var(--semera-tabs-active-bg, var(--semera-tabs-_accent));
+	color: var(--semera-tabs-active-color, var(--wp--preset--color--base, #fff));
+}
+
+/* Without scripting every panel is open, under its own heading. */
+@media (scripting: none) {
+	.semera-tabs__list {
+		display: none;
+	}
+
+	.semera-tabs__panel[hidden] {
+		display: block;
+	}
+
+	.semera-tabs__heading {
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
+		margin-block-start: 1em;
+		font-weight: 600;
+	}
+}
+
+/* Small screens: the class is set by view.js at the breakpoint of the block. */
+.semera-tabs.is-mobile {
+	flex-direction: column;
+	align-items: stretch;
+	gap: 0;
+}
+
+.is-mobile > .semera-tabs__list {
+	max-width: none;
+	min-width: 0;
+}
+
+/* "Tabs stay as they are": a vertical list becomes a horizontal one. */
+.is-mobile.is-vertical > .semera-tabs__list {
+	flex-direction: row;
+	overflow-x: auto;
+	box-shadow: inset 0 -1px 0 var(--semera-tabs-_line);
+}
+
+.is-mobile.is-vertical > .semera-tabs__list > .semera-tabs__tab[aria-selected="true"] {
+	box-shadow: inset 0 -2px 0 var(--semera-tabs-_accent);
+}
+
+.is-mobile.is-vertical > .semera-tabs__list > .semera-tabs__tab {
+	justify-content: center;
+	white-space: nowrap;
+}
+
+.is-mobile.is-mobile-stacked > .semera-tabs__list,
+.is-mobile.is-mobile-stacked.is-vertical > .semera-tabs__list {
+	flex-direction: column;
+	overflow: visible;
+	box-shadow: none;
+}
+
+.is-mobile.is-mobile-stacked > .semera-tabs__list > .semera-tabs__tab {
+	justify-content: flex-start;
+	text-align: start;
+	white-space: normal;
+	box-shadow: none;
+}
+
+.is-mobile.is-mobile-stacked > .semera-tabs__list > .semera-tabs__tab[aria-selected="true"] {
+	box-shadow: inset 3px 0 0 var(--semera-tabs-_accent);
+}
+
+.is-mobile.is-mobile-stacked.is-style-pills > .semera-tabs__list > .semera-tabs__tab[aria-selected="true"] {
+	box-shadow: none;
+}
+
+.is-mobile.is-mobile-accordion > .semera-tabs__list {
+	display: none;
+}
+
+.is-mobile.is-mobile-accordion .semera-tabs__heading {
+	display: none;
+}
+
+.is-mobile.is-mobile-accordion .semera-tabs__toggle {
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	text-align: start;
+	white-space: normal;
+	border-radius: var(--semera-tabs-radius, 0);
+}
+
+.is-mobile.is-mobile-accordion:not(.is-style-boxed):not(.is-style-pills) .semera-tabs__toggle {
+	padding-inline: var(--semera-tabs-pad-x, 0);
+}
+
+.is-mobile.is-mobile-accordion .semera-tabs__item {
+	border-bottom: 1px solid var(--semera-tabs-_line);
+}
+
+.is-mobile.is-mobile-accordion .semera-tabs__panel {
+	padding-inline: 0;
+}
+
+.is-mobile.is-mobile-accordion.is-style-boxed .semera-tabs__panels {
+	border: 0;
+	border-radius: 0;
+}
+
+.is-mobile.is-mobile-accordion.is-style-boxed .semera-tabs__panel {
+	padding-inline: var(--semera-tabs-panel-pad, 1.25em);
+}
+
+.is-mobile.is-mobile-accordion.is-style-pills .semera-tabs__toggle[aria-expanded="true"] {
+	background: var(--semera-tabs-active-bg, var(--semera-tabs-_accent));
+	color: var(--semera-tabs-active-color, var(--wp--preset--color--base, #fff));
+}
+
+.semera-tabs__chevron {
+	flex: none;
+	width: 0.5em;
+	height: 0.5em;
+	margin-inline-start: auto;
+	border: solid currentColor;
+	border-width: 0 2px 2px 0;
+	transform: translateY(-25%) rotate(45deg);
+	transition: transform 0.15s;
+}
+
+.semera-tabs__toggle[aria-expanded="true"] .semera-tabs__chevron {
+	transform: translateY(25%) rotate(-135deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.semera-tabs__tab,
+	.semera-tabs__toggle,
+	.semera-tabs__chevron {
+		transition: none;
+	}
+}
