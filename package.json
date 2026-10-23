@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "private": true,
   "description": "Tabs block for the WordPress block editor.",
-  "license": "PolyForm-Noncommercial-1.0.0",
+  "license": "GPL-2.0-or-later",
   "scripts": {
     "build": "wp-scripts build",
     "start": "wp-scripts start"
