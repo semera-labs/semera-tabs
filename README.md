@@ -3,7 +3,7 @@
 <p align="center"><em>A tabs block for the WordPress block editor.</em></p>
 
 [![Version](https://img.shields.io/badge/version-0.1.1-blue.svg)](./semera-tabs.php)
-[![License](https://img.shields.io/badge/license-GPL--2.0--or--later-yellow.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
+[![License](https://img.shields.io/badge/license-GPL--2.0--or--later-yellow.svg)](./LICENSE)
 [![WordPress](https://img.shields.io/badge/WordPress-6.5%2B-21759b.svg?logo=wordpress)](https://wordpress.org)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-777bb4.svg?logo=php)](https://php.net)
 [![Made with React](https://img.shields.io/badge/editor-React%20%2F%20Gutenberg-61dafb.svg?logo=react)](https://developer.wordpress.org/block-editor/)
@@ -143,4 +143,5 @@ powershell bin/build-zip.ps1 -SkipBuild
 ## 👤 Author
 
 * **Jan Schulz-Nigmann / Semera**
-* License: GPL-2.0-or-later
+* Copyright © 2026 Jan Schulz-Nigmann / Semera
+* License: [GPL-2.0-or-later](./LICENSE)
