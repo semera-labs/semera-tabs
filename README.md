@@ -3,7 +3,7 @@
 <p align="center"><em>A tabs block for the WordPress block editor.</em></p>
 
 [![Version](https://img.shields.io/badge/version-0.1.1-blue.svg)](./semera-tabs.php)
-[![License](https://img.shields.io/badge/license-GPL--2.0--or--later-yellow.svg)](./LICENSE)
+[![License](https://img.shields.io/badge/license-PolyForm%20Noncommercial-orange.svg)](./LICENSE)
 [![WordPress](https://img.shields.io/badge/WordPress-6.5%2B-21759b.svg?logo=wordpress)](https://wordpress.org)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-777bb4.svg?logo=php)](https://php.net)
 [![Made with React](https://img.shields.io/badge/editor-React%20%2F%20Gutenberg-61dafb.svg?logo=react)](https://developer.wordpress.org/block-editor/)
@@ -144,4 +144,4 @@ powershell bin/build-zip.ps1 -SkipBuild
 
 * **Jan Schulz-Nigmann / Semera**
 * Copyright © 2026 Jan Schulz-Nigmann / Semera
-* License: [GPL-2.0-or-later](./LICENSE)
+* License: [PolyForm Noncommercial 1.0.0](./LICENSE) plus an explicit permission for non-profit organizations. Free for noncommercial use and for non-profits of any kind (associations, clubs, churches, charities, schools). **Commercial use needs a separate license** from Semera.
