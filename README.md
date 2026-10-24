@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./docs/icon.png" alt="Semera Tabs icon" width="80"/>
+</p>
+
 <h1 align="center">Semera Tabs</h1>
 
 <p align="center"><em>A tabs block for the WordPress block editor.</em></p>
@@ -80,6 +84,7 @@ semera-tabs/
 │   ├── tabs/                 # Tabs block: block.json, edit, sidebar, view.js, style.css
 │   └── tab/                  # Tab block
 ├── build/                    # Build output (not in git)
+├── docs/icon.png             # Icon for this README (not part of the release zip)
 ├── languages/                # .pot, German .po/.mo and the JSON for the editor script
 ├── bin/                      # i18n.py, sync-to-studio.ps1, build-zip.ps1
 ├── package.json              # @wordpress/scripts

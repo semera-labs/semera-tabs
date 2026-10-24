@@ -28,7 +28,7 @@ if (-not $SkipBuild) {
 }
 
 # Everything below is left out (matched against the path relative to the plugin folder).
-$exclude = @('^\.git/', '^\.claude/', '^bin/', '^dist/', '^node_modules/', '^src/', '^CLAUDE\.md$', '^\.editorconfig$', '^\.gitignore$', '^package(-lock)?\.json$', '\.zip$')
+$exclude = @('^\.git/', '^\.claude/', '^bin/', '^dist/', '^docs/', '^node_modules/', '^src/', '^CLAUDE\.md$', '^\.editorconfig$', '^\.gitignore$', '^package(-lock)?\.json$', '\.zip$')
 
 New-Item -ItemType Directory -Force $dist | Out-Null
 if (Test-Path $zipPath) { Remove-Item $zipPath }
